@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MAUITest.CollectionsControlsDemo"
+    Title="Collections Controls Demo">
+    <VerticalStackLayout>
+        
+        <CarouselView
+            IndicatorView="indicatorView">
+            <CarouselView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Colombia</x:String>
+                    <x:String>Peru</x:String>
+                    <x:String>Ecuador</x:String>
+                    <x:String>Bolivia</x:String>
+                    <x:String>Venezuela</x:String>
+                    <x:String>Panama</x:String>
+                    <x:String>Argentina</x:String>
+                    <x:String>Mexico</x:String>
+                    <x:String>Brasil</x:String>
+                </x:Array>
+            </CarouselView.ItemsSource>
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                        <VerticalStackLayout
+                            Margin="10">
+
+                            <Frame
+                            Padding="10"
+                            Margin="20"
+                            BorderColor="Silver"
+                            BackgroundColor="LightYellow"
+                            CornerRadius="5"
+                            HasShadow="True"
+                            HeightRequest="100"
+                            HorizontalOptions="Center"
+                            VerticalOptions="CenterAndExpand">
+                                <Label
+                                FontAttributes="Bold"
+                                FontSize="20"
+                                TextColor="Purple"
+                                Text="{Binding .}"/>
+                            </Frame>
+                        </VerticalStackLayout>
+                    </StackLayout>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+
+        <IndicatorView
+            x:Name="indicatorView"
+            HorizontalOptions="Center"
+            IndicatorColor="LightGray"
+            SelectedIndicatorColor="DarkGray"/>
+    </VerticalStackLayout>
+</ContentPage>
