@@ -10,16 +10,20 @@ public partial class BindingDemo1 : ContentPage
     {
         var person = new Person
         {
-            Name = "Carolina Giraldo",
+            Name = "carolina giraldo",
             Phone = "322 311 4620",
-            Address = "Calle Luna Calle Sol"
+            Address = "calle luna calle sol"
         };
 
-        var personBinding = new Binding();
-        personBinding.Source = person;
-        personBinding.Path = "Name";
 
-        lblName.SetBinding(Label.TextProperty, personBinding);
+        BindingContext = person;
+        //lblName.SetBinding(Label.TextProperty, "Name");
+
+        //var personBinding = new Binding();
+        //personBinding.Source = person;
+        //personBinding.Path = "Name";
+
+        //lblName.SetBinding(Label.TextProperty, personBinding);
 
     }
 
