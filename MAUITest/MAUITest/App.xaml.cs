@@ -1,4 +1,6 @@
-﻿namespace MAUITest;
+﻿using MAUITest.BindingDemo;
+
+namespace MAUITest;
 
 public partial class App : Application
 {
@@ -12,6 +14,6 @@ public partial class App : Application
         //navPage.Title = "Demo MAUI";
         //MainPage = navPage;
 
-        MainPage = new NavigationPage(new CollectionsControlsDemo());
+        MainPage = new NavigationPage(new BindingDemo1());
     }
 }
