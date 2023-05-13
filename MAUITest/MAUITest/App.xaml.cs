@@ -1,4 +1,5 @@
 ﻿using MAUITest.BindingDemo;
+using MAUITest.MVVM.Views;
 
 namespace MAUITest;
 
@@ -8,12 +9,6 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
-        //var navPage = new NavigationPage(new ContentPageDemo());
-        //navPage.BarBackgroundColor = Colors.Chocolate;
-        //navPage.BarTextColor = Colors.White;
-        //navPage.Title = "Demo MAUI";
-        //MainPage = navPage;
-
-        MainPage = new NavigationPage(new SliderPage());
+        MainPage = new NavigationPage(new PersonView());
     }
 }
