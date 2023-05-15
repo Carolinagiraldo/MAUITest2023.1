@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Globalization;
 
-namespace Sales.Mobile.MVVM.Converters
+namespace MAUITest.MVVM.Converters
 {
     public class BoolConverter : IValueConverter
     {

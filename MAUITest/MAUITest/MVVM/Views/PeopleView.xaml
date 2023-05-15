@@ -2,7 +2,7 @@
 <ContentPage 
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:converters="clr-namespace:Sales.Mobile.MVVM.Converters"
+    xmlns:converters="clr-namespace:MAUITest.MVVM.Converters"
     x:Class="MAUITest.MVVM.Views.PeopleView"
     Title="People View">
     
